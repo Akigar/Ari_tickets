@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Cities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ билетов"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Откуда"
+            android:layout_marginStart="15dp"/>
+        <Spinner
+            android:id="@+id/listfirst"
+            android:entries="@array/first_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/first"
+            android:layout_alignBottom="@id/first"/>
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Куда"
+            android:layout_toEndOf="@id/listfirst"
+            android:layout_alignBottom="@id/listfirst"/>
+        <Spinner
+            android:entries="@array/second_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/second"
+            android:layout_alignBottom="@id/second"/>
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата вылета"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/first"
+            android:layout_marginStart="15dp"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date1"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата прилета"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/listfirst"
+            android:layout_toEndOf="@id/listfirst" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date2"
+            android:layout_toEndOf="@id/listfirst" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Взрослые"
+        android:layout_marginStart="15dp"/>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дети"
+        android:layout_marginStart="15dp"/>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Младенцы"
+        android:layout_marginStart="15dp"/>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Найти"
+        android:layout_gravity="center_horizontal"/>
+
+  </LinearLayout>
