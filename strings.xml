@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Air_tickets</string>
+    <string-array name="first_city">
+        <item>Иркутск</item>
+        <item>Улан-удэ</item>
+        <item>Братск</item>
+        <item>Сочи</item>
+        <item>Новосибирск</item>
+        <item>Москва</item>
+        <item>Казань</item>
+    </string-array>
+    <string-array name="second_city">
+        <item>Улан-удэ</item>
+        <item>Иркутск</item>
+        <item>Братск</item>
+        <item>Сочи</item>
+        <item>Новосибирск</item>
+        <item>Москва</item>
+        <item>Казань</item>
+    </string-array>
+</resources>
